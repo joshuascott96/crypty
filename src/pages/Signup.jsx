@@ -5,12 +5,12 @@ import { BiShow } from 'react-icons/bi'
 function Signup() {
     return (
         <>
-            <input type="checkbox" id="signup-modal" class="modal-toggle" />
-            <div id='signup-modal' class="modal">
+            <input type="checkbox" id="signup-modal" className="modal-toggle" />
+            <div id='signup-modal' className="modal">
                 <div className="w-full flex max-w-sm mx-auto bg-base-100 border border-primary">
                     <div className="relative px-6 py-8 md:px-8 w-full">
                         <div className='absolute top-2 right-2'>
-                            <label for="signup-modal" class="btn btn-secondary btn-sm border-none">x</label>
+                            <label for="signup-modal" className="btn btn-secondary btn-sm border-none">x</label>
                         </div>
                         <p className="text-xl text-center">Welcome to,</p>
                         <h2 className="mono tracking-tighter text-3xl font-semibold text-center mb-1">CRYPTY.</h2>
@@ -27,7 +27,7 @@ function Signup() {
                         <div className="mt-4 relative">
                             <label className="block mb-1 text-xs" for="LoggingEmailAddress">Email Address</label>
                             <input id="LoggingEmailAddress" className="input input-bordered input-primary rounded-none w-full px-4 py-2 bg-base-200 border border-primary" type="email" />
-                            <span class="absolute text-gray-500 pointer-events-none top-9 right-4">
+                            <span className="absolute text-gray-500 pointer-events-none top-9 right-4">
                                 <MdOutlineAlternateEmail />
                             </span>
                         </div>
@@ -36,7 +36,7 @@ function Signup() {
                                 <label className="block mb-1 text-xs" for="loggingPassword">Password</label>
                             </div>
                             <input id="" className="input input-bordered input-primary rounded-none w-full px-4 py-2 bg-base-200 border border-primary" type="password" />
-                            <span class="absolute text-gray-500 pointer-events-none top-9 right-4">
+                            <span className="absolute text-gray-500 pointer-events-none top-9 right-4">
                                 <BiShow size={18} />
                             </span>
                             <label className="text-xs" for="loggingPassword">Strength:</label>
@@ -45,14 +45,14 @@ function Signup() {
                                 <p className="text-xs text-center uppercase mono">Acknowledge the formalities</p>
                                 <span className="w-1/5 border-b border-primary opacity-50 lg:w-1/4"></span>
                             </div>
-                            <div class="form-control mt-1 text-2xs">
-                                <label class="label cursor-pointer pt-3">
+                            <div className="form-control mt-1 text-2xs">
+                                <label className="label cursor-pointer pt-3">
                                     <span>I agree to Crypty's<a href='' className='font-bold pl-1 hover:underline'>Terms of Service & Privacy Policy</a></span>
-                                    <input type="checkbox" class="flex checkbox checkbox-xs" />
+                                    <input type="checkbox" className="flex checkbox checkbox-xs" />
                                 </label>
-                                <label class="label cursor-pointer pt-0">
+                                <label className="label cursor-pointer pt-0">
                                     <span>I would like to sign up to the<a href='' className='font-bold pl-1 hover:underline'>Crypty Newsletter</a></span>
-                                    <input type="checkbox" class="flex checkbox checkbox-xs" />
+                                    <input type="checkbox" className="flex checkbox checkbox-xs" />
                                 </label>
                             </div>
                         </div>
