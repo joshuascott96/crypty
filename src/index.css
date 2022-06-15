@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300;500&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Raleway];
+    }
+
+    [data-theme="lofi"] .btn-primary {
+      @apply px-10;
+      @apply rounded-none;
+    }
+
+    [data-theme="lofi"] .btn-secondary {
+      border-width: 1px;
+      border-color: black;
+      @apply bg-white;
+      @apply text-primary;
+      @apply hover:text-white;
+      @apply duration-300;
+      @apply rounded-none;
+    }
+
+     .tooltip {
+        border-radius: 0px;
+        text-transform: none;
+        @apply font-normal;
+    }
+
+    ul li {
+      @apply border-white;
+      @apply border;
+      @apply hover:border-primary;
+      @apply duration-300;
+      @apply hover:rounded-none;
+    }
+
+    .mono {
+        font-family: 'M PLUS 1 Code', 'Raleway', sans-serif;
+        @apply tracking-wide;
+    }
+
+    .sans {
+      font-family: sans-serif ;
+    }
+
+    .logo-nav {
+      @apply mono;
+      @apply tracking-tighter;
+      @apply font-bold;
+      @apply text-4xl;
+    }
+
+    .modal {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(1rem);
+  }
+
 }
