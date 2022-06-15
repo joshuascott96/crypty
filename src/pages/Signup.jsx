@@ -26,7 +26,7 @@ function Signup() {
                         </div>
                         <div className="mt-4 relative">
                             <label className="block mb-1 text-xs" for="LoggingEmailAddress">Email Address</label>
-                            <input id="LoggingEmailAddress" className="input input-bordered input-primary rounded-none w-full px-4 py-2 bg-base-200 border border-primary" type="email" />
+                            <input id="LoggingEmailAddress" className="input input-bordered input-primary rounded-none w-full px-4 py-2 bg-base-200 border border-primary" type="email" placeholder='Email Address' />
                             <span className="absolute text-gray-500 pointer-events-none top-9 right-4">
                                 <MdOutlineAlternateEmail />
                             </span>
@@ -35,7 +35,7 @@ function Signup() {
                             <div className="form-control">
                                 <label className="block mb-1 text-xs" for="loggingPassword">Password</label>
                             </div>
-                            <input id="" className="input input-bordered input-primary rounded-none w-full px-4 py-2 bg-base-200 border border-primary" type="password" />
+                            <input id="" className="input input-bordered input-primary rounded-none w-full px-4 py-2 bg-base-200 border border-primary" type="password" placeholder='Password' />
                             <span className="absolute text-gray-500 pointer-events-none top-9 right-4">
                                 <BiShow size={18} />
                             </span>

@@ -14,21 +14,21 @@ function Hero() {
                         <button className='btn btn-secondary px-10'>Price Check<span className='pl-3'><BiLineChart size={18} /></span></button>
                     </div>
 
-                    <div class="stats bg-base-200 border-primary border rounded-none mt-10">
-                        <div class="stat text-center">
-                            <div class="stat-desc">Tracking Over</div>
-                            <div class="stat-value">1,000+</div>
-                            <div class="stat-desc">Cryptocurrencies</div>
+                    <div className="stats bg-base-200 border-primary border rounded-none mt-10">
+                        <div className="stat text-center">
+                            <div className="stat-desc">Tracking Over</div>
+                            <div className="stat-value">1,000+</div>
+                            <div className="stat-desc">Cryptocurrencies</div>
                         </div>
-                        <div class="stat text-center">
-                            <div class="stat-desc">Watching</div>
-                            <div class="stat-value">150+</div>
-                            <div class="stat-desc">NFT Projects</div>
+                        <div className="stat text-center">
+                            <div className="stat-desc">Watching</div>
+                            <div className="stat-value">150+</div>
+                            <div className="stat-desc">NFT Projects</div>
                         </div>
-                        <div class="stat text-center">
-                            <div class="stat-desc">Over</div>
-                            <div class="stat-value">4,200</div>
-                            <div class="stat-desc">New Users</div>
+                        <div className="stat text-center">
+                            <div className="stat-desc">Over</div>
+                            <div className="stat-value">4,200</div>
+                            <div className="stat-desc">New Users</div>
                         </div>
                     </div>
                 </div>

@@ -30,7 +30,7 @@ function Loginmodal() {
 
                         <div className="relative mt-4">
                             <label className="block mb-1 text-xs" for="LoggingEmailAddress">Email Address</label>
-                            <input id="LoggingEmailAddress" className="input input-bordered input-primary rounded-none w-full px-4 py-2 bg-base-200 border border-primary" type="email" />
+                            <input id="LoggingEmailAddress" className="input input-bordered input-primary rounded-none w-full px-4 py-2 bg-base-200 border border-primary" type="email" placeholder='Email Address' />
                             <span className="absolute text-gray-500 pointer-events-none top-9 right-4">
                                 <MdOutlineAlternateEmail />
                             </span>
@@ -41,7 +41,7 @@ function Loginmodal() {
                                 <label className="block mb-1 text-xs" for="loggingPassword">Password</label>
                                 <a href="/" className="text-xs hover:underline">Forget Password?</a>
                             </div>
-                            <input id="loggingPassword" className="input input-bordered rounded-none input-primary w-full px-4 py-2 bg-base-200 border border-primary" type="password" />
+                            <input id="loggingPassword" className="input input-bordered rounded-none input-primary w-full px-4 py-2 bg-base-200 border border-primary" type="password" placeholder='Password' />
                             <span className="absolute text-gray-500 pointer-events-none top-9 right-4">
                                 <BiShow size={18} />
                             </span>

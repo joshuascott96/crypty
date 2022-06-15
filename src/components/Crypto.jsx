@@ -17,9 +17,9 @@ function Crypto({ coins }) {
             <div className="relative overflow-x-auto lg:px-20">
                 <div className='navbar px-0 pt-8'>
                     <div className='hidden sm:flex navbar-start'>
-                        <div class="dropdown mono text-xs dropdown-hover">
-                            <label tabindex="0" class="btn btn-sm btn-secondary normal-case text-xs mr-1">Blockchain</label>
-                            <ul tabindex="0" class="dropdown-content menu mt-1 p-1 bg-base-100 border border-primary w-52">
+                        <div className="dropdown mono text-xs dropdown-hover">
+                            <label tabindex="0" className="btn btn-sm btn-secondary normal-case text-xs mr-1">Blockchain</label>
+                            <ul tabindex="0" className="dropdown-content menu mt-1 p-1 bg-base-100 border border-primary w-52">
                                 <li><a>Ethereum</a></li>
                                 <li><a>Binance Smart Chain</a></li>
                                 <li><a>Solana</a></li>
@@ -88,11 +88,11 @@ function Crypto({ coins }) {
                             ))}
                     </tbody>
                 </table>
-                <div class="btn-group justify-center lg:justify-end mt-4 mb-10">
-                    <button class="btn btn-secondary">1</button>
-                    <button class="btn">2</button>
-                    <button class="btn">3</button>
-                    <button class="btn">4</button>
+                <div className="btn-group justify-center lg:justify-end mt-4 mb-10">
+                    <button className="btn btn-secondary">1</button>
+                    <button className="btn">2</button>
+                    <button className="btn">3</button>
+                    <button className="btn">4</button>
                 </div>
             </div>
         </>

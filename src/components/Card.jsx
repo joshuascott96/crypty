@@ -30,7 +30,7 @@ function Card({ coin, idx }) {
                 </div>
                 <div className='col-span-2 bg-base-300 pb-2 pt-1 pr-2 grid content-between justify-items-end'>
                     <div className=''>
-                        <span class="badge bg-primary text-base-100 text-2xs rounded-none border-primary sans font-bold">{idx + 1}</span>
+                        <span className="badge bg-primary text-base-100 text-2xs rounded-none border-primary sans font-bold">{idx + 1}</span>
                     </div>
                     <div className=''>
                         <button className='btn btn-sm btn-secondary text-xs flex'><BiArrowToRight size={15} /></button>
