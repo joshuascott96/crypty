@@ -24,7 +24,7 @@ function Trending() {
         </div>
         <div className='mt-8 grid md:grid-cols-2 text-left lg:grid-cols-3 gap-3'>
           {trending.slice(0, 6).map((coin, idx) => (
-            <Card coin={coin} idx={idx} />
+            <Card coin={coin} idx={idx} key={idx} />
           ))}
         </div>
       </div>
@@ -34,7 +34,7 @@ function Trending() {
         </div>
         <div className='mt-8 grid md:grid-cols-2 text-left lg:grid-cols-3 gap-3'>
           {trending.slice(0, 6).map((coin, idx) => (
-            <Card coin={coin} idx={idx} />
+            <Card coin={coin} idx={idx} key={idx} />
           ))}
         </div>
       </div>

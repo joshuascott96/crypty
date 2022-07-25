@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { BiSearch, BiTrendingUp } from 'react-icons/bi'
-import { TiArrowSortedUp } from 'react-icons/ti'
-import { AiFillStar, AiOutlineExclamationCircle } from 'react-icons/ai'
+import { BiSearch } from 'react-icons/bi'
+import { AiFillStar } from 'react-icons/ai'
 import { HiInformationCircle } from 'react-icons/hi'
 import CoinItem from './CoinItem'
 
@@ -18,18 +17,18 @@ function Crypto({ coins }) {
                 <div className='navbar px-0 pt-8'>
                     <div className='hidden sm:flex navbar-start'>
                         <div className="dropdown mono text-xs dropdown-hover">
-                            <label tabindex="0" className="btn btn-sm btn-secondary normal-case text-xs mr-1">Blockchain</label>
-                            <ul tabindex="0" className="dropdown-content menu mt-1 p-1 bg-base-100 border border-primary w-52">
-                                <li><a>Ethereum</a></li>
-                                <li><a>Binance Smart Chain</a></li>
-                                <li><a>Solana</a></li>
+                            <label tabIndex="0" className="btn btn-sm btn-secondary normal-case text-xs mr-1">Blockchain</label>
+                            <ul tabIndex="0" className="dropdown-content menu mt-1 p-1 bg-base-100 border border-primary w-52">
+                                <li className='dropdown-list'>Ethereum</li>
+                                <li className='dropdown-list'>Binance Smart Chain</li>
+                                <li className='dropdown-list'>Solana</li>
                             </ul>
                         </div>
                         <button className='btn btn-sm btn-secondary mono normal-case text-xs mr-1'>Top Gainers</button>
                         <button className='btn btn-sm btn-secondary mono normal-case text-xs mr-1'>Top Losers</button>
                     </div>
                     <div className="flex mx-auto sm:navbar-end">
-                        <label for="table-search" className="sr-only">Search</label>
+                        <label htmlFor="table-search" className="sr-only">Search</label>
                         <div className="relative flex w-full sm:w-auto">
                             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <BiSearch size={20} />
@@ -81,6 +80,8 @@ function Crypto({ coins }) {
                                 value.name.toLowerCase().includes(searchText.toLocaleLowerCase())
                             ) {
                                 return value
+                            } else {
+                                return console.log(false)
                             }
                         })
                             .map((coin) => (

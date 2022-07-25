@@ -7,6 +7,9 @@ import Signup from './pages/Signup';
 import Account from './pages/Account';
 import axios from 'axios';
 import Loginmodal from './pages/Loginmodal';
+import { AuthContextProvider } from './context/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute'
+import CoinPage from './pages/CoinPage';
 
 function App() {
 
@@ -25,14 +28,21 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home coins={coins} />} />
-        <Route path='/account' element={<Account />} />
-      </Routes>
-      <Loginmodal />
-      <Signup />
-      <Footer />
+      <AuthContextProvider>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home coins={coins} />} />
+          <Route path='/coin/:coinId' element={<CoinPage />} />
+          <Route path='/account' element={
+            <ProtectedRoute>
+              <Account />
+            </ProtectedRoute>
+          } />
+        </Routes>
+        <Loginmodal />
+        <Signup />
+        <Footer />
+      </AuthContextProvider>
     </>
   );
 }

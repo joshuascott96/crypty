@@ -60,4 +60,20 @@
       backdrop-filter: blur(1rem);
   }
 
+  .dropdown-list {
+    @apply px-4;
+    @apply py-2;
+    @apply text-sm;
+    @apply cursor-pointer;
+    @apply hover:bg-primary;
+    @apply hover:text-base-100;
+  }
+
+  .navbar-padding {
+    @apply px-4;
+    @apply py-3;
+    @apply hover:bg-primary;
+    @apply hover:text-base-100;
+  }
+
 }
